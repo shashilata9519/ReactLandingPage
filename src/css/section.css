@@ -1,0 +1,243 @@
+.sectionOne {
+  display: flex;
+
+  margin: 50px 200px;
+}
+.sectionOne .sectionOneImage {
+  width: 500px;
+  height: 400px;
+}
+.sectionOneImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionOneText {
+  padding: 60px 10px;
+}
+.sectionOneText h5 {
+  font-size: 3rem !important;
+  color: #0b132a;
+  font-weight: 500;
+}
+.sectionOneText span {
+  font-weight: bold;
+}
+.sectionOneText p {
+  padding-top: 10px;
+  padding-right: 80px;
+  width: 540px;
+  line-height: 2;
+  color: #4f5665;
+  font-size: 14px !important;
+}
+
+.sectionOneText button {
+  margin-top: 20px;
+  padding: 15px 50px;
+  border-radius: 7px;
+  border: none;
+  background-color: #f53838;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 10px 20px 0px #f538386e;
+}
+
+.sectionTwo {
+  margin: 20px 200px;
+}
+.row {
+ 
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 30px 10px;
+  border-radius: 5px;
+}
+.col img {
+  width: 50px;
+  padding: 10px;
+  background-color: #ffecec;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.col {
+ 
+  display: flex;
+  padding: 50px ;
+ justify-content: center;
+  text-align: center;
+  
+}
+.col:first-child,.col:nth-child(2){
+  border-right: 2px solid #EEEFF2;
+}
+.sectionThree{
+  justify-content:space-between;
+  margin: 50px 160px;
+}
+.sectionThree .sectionList{
+  margin-top: 10px;
+  display: flex;
+}
+.sectionThree .sectionOneText p{
+  padding-right: 136px;
+  width: 499px;
+  
+}
+.sectionList img{
+  width: 20px;
+  margin-right: 10px;
+}
+.sectionList img,.sectionList div{
+
+  margin-top: 10px;
+}
+.sectionThree h1{
+  font-size: 2rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .sectionOne {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+  .sectionOne .sectionOneImage {
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  .sectionOneText {
+    padding: 10px;
+  }
+  .sectionOneText h5 {
+    font-size: 1.3rem !important;
+    color: #0b132a;
+    font-weight: 500;
+  }
+  .sectionOneText p {
+    padding: 0px;
+    width: auto;
+  }
+
+  .sectionOneText button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  .sectionTwo {
+    margin:auto;
+  }
+  .row{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .col:nth-child(2), .col:first-child{
+    border: none;
+  }
+  .sectionThree .sectionOneText p{
+    padding-right: 0;
+    width:fit-content;
+  
+    
+  }
+  .sectionThree h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+ 
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 768px) and (min-width: 600px) {
+  .sectionOne {
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+  }
+  .sectionOne .sectionOneImage {
+    margin: auto;
+    text-align: center;
+  }
+  .sectionOneText {
+    padding: 0;
+    width: auto;
+  }
+  .sectionOneText h5 {
+    font-size: 2rem !important;
+    color: #0b132a;
+    font-weight: 500;
+  }
+  .sectionOneText p {
+    padding: 10px;
+
+    margin: auto;
+  }
+  .sectionOneText button {
+    margin-bottom: 20px;
+  }
+  .sectionTwo {
+    margin: 0px;
+  }
+  .sectionOne .row{
+  
+    grid-template-rows: 300px 300px 300px;
+  }
+  .sectionThree .sectionOneText p{
+    padding: 0;
+    width: 499px;
+    margin: auto;
+    
+  }
+  .sectionThree .sectionList{
+    margin-top: 10px;
+    display: flex;
+    margin-left: 230px;
+  }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 992px) and (min-width: 768px) {
+  .sectionOne {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sectionOne .sectionOneImage {
+    width: 400px;
+    height: 300px;
+  }
+  .sectionOneText {
+    padding: 0;
+  }
+  .sectionOneText h5 {
+    font-size: 2rem !important;
+    color: #0b132a;
+    font-weight: 500;
+  }
+  .sectionTwo {
+    margin: 20px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width: 1200px) and (min-width: 992px) {
+  .sectionOne {
+    margin: 50px 100px;
+  }
+
+  .sectionOneText h5 {
+    font-size: 2rem !important;
+    color: #0b132a;
+    font-weight: 500;
+  }
+  .sectionTwo {
+    margin: 20px;
+  }
+  .sectionThree{
+    margin: auto;
+  }
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

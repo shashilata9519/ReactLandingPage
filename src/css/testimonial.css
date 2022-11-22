@@ -1,0 +1,125 @@
+.testimonial{
+    margin: 50px 200px;
+}
+.testimonial .testHeading{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cardbody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partOne img{
+    width: 50px;
+    margin-right: 10px;
+}
+.partOne{
+    display: flex;
+    
+}
+.rating i{
+    color: #FEA250;
+}
+.card{
+    border: 2px solid #DDDDDD;
+    width: 358px;
+    height: 200px;
+    padding: 13px 25px;
+    border-radius: 10px;
+    margin: 40px 10px;
+}
+.cardCol:first-child .card{
+    border: 2px solid #F53838 !important;
+}
+.cardtext p{
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.cardRow{
+    display: flex;
+    justify-content: space-around;
+    margin:30x 5px;
+    
+}
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider .dots{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.slider .dots p:first-child{
+  
+    width: 30px;
+    height: 10px;
+    background-color: #F53838;
+   
+    border-radius: 20px;
+}
+.slider .dots p{
+    width: 10px;
+    height: 10px;
+    background-color: #DDE0E4;
+    border-radius: 50%;
+}
+.slider .arrow {
+    display: flex;
+    
+}
+.slider .arrow p{
+    padding: 7px 10px;
+    border-radius: 50%;
+    border: 1px solid #F53838;
+    color: #F53838;
+    margin-right: 5px;
+}
+.slider .arrow p:last-child {
+    background-color: #F53838;
+    color: white;
+}
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cardRow{
+        flex-wrap: wrap;
+    }
+    .testimonial{
+        margin: auto;
+    }
+    .card{
+        width: 300px;
+        height: 230px;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width:768px) and (min-width: 600px) {
+    .cardRow{
+        flex-wrap: wrap;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width:992px) and (min-width: 768px) {
+    .cardRow{
+        flex-wrap: wrap;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media (max-width:1200px) and (min-width: 992px) {
+    .cardRow{
+        flex-wrap: wrap;
+    }
+   
+}
